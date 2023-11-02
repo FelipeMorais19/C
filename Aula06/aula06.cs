@@ -14,5 +14,5 @@ class Aula06{
         Console.WriteLine("Val.Compra......:{0,15:c}", valorCompra);
         Console.WriteLine("Lucro...........:{0,15:p}", lucro);
         Console.WriteLine("Val.Venda.......:{0,15:c}", valorVenda);
-    }
+    } 
 }
