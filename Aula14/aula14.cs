@@ -1,7 +1,6 @@
 using System;
 
-class Aula13 {
-
+class Aula14 {
     static void Main() {
 
         int n1, n2, n3, n4, res;
@@ -23,14 +22,27 @@ class Aula13 {
         res = (n1 + n2 + n3 + n4) / 4;
         
         if(res >= 6) {
-            resultado = "Aprovado!";
+            if(res >= 9) {
+                if(res == 10) {
+                    resultado = "Super aprovado!";
+                }
+                else {
+                    resultado = "Aprovado com louvor!";
+                }
+            }
+            else {
+                resultado = "Aprovado!";
+            }
         }
         else {
-            resultado = "Reprovado!";
+            if(res > 4) {
+                resultado = "Recuperação!";
+            }
+            else {
+                resultado  = "Reprovado!";
+            }
         }
 
-        Console.WriteLine("Nota: {0}\nResultado: {1}",res, resultado);
-
+        Console.WriteLine("Nota: {0} - Resultado: {1}", res, resultado);
     }
-
 }
